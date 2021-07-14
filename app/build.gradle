@@ -16,6 +16,22 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+//    val versionPropFile = File("version.properties")
+//    if (versionPropFile.canRead()) {
+//        val props = Properties()
+//        props.load(FileInputStream(versionPropFile))
+//        val buildNumber = props["BUILD_NUMBER"].toString().toInt()
+//        defaultConfig {
+//            applicationId = "com.mysuperdispatch.mainapptest"
+//            minSdkVersion(21)
+//            targetSdkVersion(30)
+//            versionCode = buildNumber
+//            versionName = "1.1"
+//
+//            resConfigs("en", "notnight", "port")
+//        }
+//    } else throw FileNotFoundException("Could not read version.properties file. Please see app.gradle file")
+
 
     buildTypes {
         release {

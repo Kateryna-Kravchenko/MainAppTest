@@ -30,7 +30,7 @@ jobs:
         run: echo BUILD_NUMBER=${{ github.run_number }} > ./version.properties
 
       - name: Build Project
-        run: ./gradlew clean bundleDebug assembleDebug
+        run: ./gradlew clean assembleDebug
 
       - name: Get apk name
         id: apk-name
