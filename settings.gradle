@@ -1,3 +1,4 @@
+include ':designdemo:designSystem'
 include ':designdemo'
 include ':app'
 rootProject.name = "MainAppTest"
