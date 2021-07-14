@@ -41,7 +41,7 @@ jobs:
       - name: Get bundle name
         id: bundle-name
         run: |
-          BUNDLE_NAME=$(echo app/build/outputs/apk/debug/*.aab)
+          BUNDLE_NAME=$(echo app/build/outputs/apk/debug/*.apk)
           echo "::set-output name=BUNDLE_NAME::${BUNDLE_NAME}"
 
       - name: Upload App bundle
