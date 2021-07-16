@@ -76,7 +76,7 @@ jobs:
       - name: Verify gradle wrapper
         uses: gradle/wrapper-validation-action@v1
       - name: Detecting changes
-        run: ./build_pull_request.sh
+        run: chmod +x ./build_pull_request.sh
 
       - name: Run unit tests and Code Coverage
         if: env.build_commands != ''
