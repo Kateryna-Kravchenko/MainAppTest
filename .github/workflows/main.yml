@@ -72,9 +72,11 @@ jobs:
 
       - name: Install NDK
         run: echo "y" | sudo ${ANDROID_HOME}/tools/bin/sdkmanager --install "ndk;21.0.6113669" --sdk_root=${ANDROID_SDK_ROOT}
-
+        
+      - name: Verify gradle wrapper
+        uses: gradle/wrapper-validation-action@v1
       - name: Detecting changes
-          run: ./build_pull_request.sh
+        run: ./build_pull_request.sh
 
       - name: Run unit tests and Code Coverage
         if: env.build_commands != ''
